@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# إعادة توجيه الطلبات من bg؟* إلى news_detail.php
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^bg$ /news/news_detail.php?title=%1 [L,QSA]
+
