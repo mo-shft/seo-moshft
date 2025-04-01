@@ -1,4 +1,141 @@
-/* إعدادات عامة للصفحة */
+/*
+******************************************************************************************************************
+This plugin was developed by Engineer Mohamed Shaaban. You can visit the following website:  
+
+https://moshft.hup.icu
+
+Powerd by moshft
+******************************************************************************************************************
+*/
+
+/* تنسيق الحاوية */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* تنسيق العنوان الرئيسي */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* تنسيق العناصر داخل الفورم */
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* زر الإرسال */
+form input[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* محرر النصوص مع شريط الأدوات */
+.editor-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+.toolbar button:hover {
+    color: #000;
+}
+
+/* لضمان وجود مساحة لشريط الأدوات داخل الـ textarea */
+.editor-container textarea {
+    padding-top: 40px;
+    resize: vertical;
+}
+
+/* تنسيق النافذة المنبثقة (Modal) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* زر إغلاق النافذة */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
 
 
 /* تنسيق الحاوية الرئيسية للمحرر */
